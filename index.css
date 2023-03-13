@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  background-color: #f5f5f5;
+}
+
+/* ------------------------------------navBar----------------------------*/
+
+nav {
+  width: 100%;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.logo img {
+  width: 5rem;
+  margin: 4px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 2px;
+}
+nav ul li {
+  padding: 3px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+.create-btn {
+  background-color: #ff5a5f;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* ------------------------------------navBar-END----------------------------*/
+
+/* ----------------------------Header--------------------------------------- */
+header {
+  display: flex;
+  min-height: 90vh;
+  background: url(./images/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.header-content {
+  text-align: center;
+  padding: 10px;
+}
+
+.header-content h1 {
+  font-size: 5rem;
+  padding: 10px;
+  margin-top: 20px;
+  color: #d2e93a;
+}
+
+.header-content p {
+  color: #ffff;
+}
+.header-content a {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header-content p {
+  margin: 20px;
+}
+
+/* ------------------------------------header-END----------------------------*/
+
+@media (min-width: 675px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0px;
+  }
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+
+  nav ul li {
+    padding: 8px;
+  }
+}
